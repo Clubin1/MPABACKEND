@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "aboutpages",
+  "info": {
+    "name": "aboutpage",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "aboutusHeader": {
+      "type": "string"
+    },
+    "aboutusDesc": {
+      "type": "text"
+    },
+    "servingcomHeader": {
+      "type": "string"
+    },
+    "servingcomDesc": {
+      "type": "text"
+    },
+    "psychologistservHeader": {
+      "type": "string"
+    },
+    "psychologistservDesc": {
+      "type": "text"
+    }
+  }
+}
