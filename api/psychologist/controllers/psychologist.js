@@ -2,6 +2,9 @@
  * Read the documentation (https://strapi.io/documentation/developer-docs/latest/development/backend-customization.html#core-controllers)
  * to customize this controller
  */
+ const express = require('express')
+ const app = express()
+
  const cloudinary = require('cloudinary').v2
 
  cloudinary.config({
@@ -10,9 +13,8 @@
      api_secret: "O5UlUZSr5xFchZ0Gb-g0wkEh21U"
  })
 
+
 module.exports = {
-
-
     create: async (ctx) => {
 
         const {
@@ -38,7 +40,7 @@ module.exports = {
             imgurl,
             ps_url
         } = ctx.request.body
-
+        ctx.request.body.ps_url = "123123123"
         // Register the order in the database
         const psychologist = await strapi.services.psychologist.create({
 
@@ -61,7 +63,7 @@ module.exports = {
             assessmentEvaluations,
             populationsServed,
             languages,
-            imgurl,
+            imgurl,   
             ps_url
         });
 
