@@ -62,7 +62,7 @@ module.exports = {
             populationsServed,
             languages,
             imgurl,
-            ps_url = imgurl
+            ps_url
         });
 
         return psychologist;
