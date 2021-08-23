@@ -40,7 +40,6 @@ module.exports = {
             imgurl,
             ps_url
         } = ctx.request.body
-        ctx.request.body.ps_url = "123123123"
         // Register the order in the database
         const psychologist = await strapi.services.psychologist.create({
 

@@ -11,20 +11,14 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "becomeHeader": {
-      "type": "string"
-    },
-    "becomeDesc": {
+    "eventHeader": {
       "type": "text"
     },
-    "becomeButton": {
-      "type": "string"
-    },
-    "officeHeader": {
-      "type": "string"
-    },
-    "officeDesc": {
+    "eventText": {
       "type": "text"
+    },
+    "eventDate": {
+      "type": "string"
     }
   }
 }
