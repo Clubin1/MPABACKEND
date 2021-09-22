@@ -19,6 +19,9 @@
     },
     "eventDate": {
       "type": "string"
+    },
+    "eventLinks": {
+      "type": "string"
     }
   }
 }
